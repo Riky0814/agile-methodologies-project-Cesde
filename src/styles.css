@@ -1,3 +1,223 @@
-body {
-    font: 453,
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: "poppins", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html, body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Estilo para la sección principal */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilo para cada artículo */
+article {
+    background-color: #f1f1f1;
+    margin: 20px;
+    padding: 20px;
+    flex-basis: 30%;
+}
+
+/* Estilos para la sección de entrega */
+.deliver {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    background-color: #FBD38D;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0px 10px 20px rgba(245, 158, 11, 0.4);
+  }
+  
+  .deliver__image {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  .deliver__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  /* Estilos para el texto principal */
+  .home__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .home__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1E293B;
+    line-height: 1.2;
+  }
+  
+  .home__title span {
+    color: #FBD38D;
+    font-size: 3rem;
+  }
+  
+  .home__subtitle {
+    font-size: 1rem;
+    color: #4B5563;
+    text-align: justify;
+    max-width: 80%;
+  }
+  
+  .home__button {
+    background-image: linear-gradient(to bottom right, #F97316, #EF4444);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .home__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Estilos para la sección de productos */
+  .products__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .products__container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .product:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product__image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .product__title {
+    font-size: 1
+  }
+
+  /* Estilos para el footer */
+footer {
+    background-color: #1a202c;
+    color: #fff;
+  }
+  
+  footer h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  footer span.text-teal-400 {
+    color: #38b2ac;
+  }
+  
+  footer input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    color: #2d3748;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    width: 100%;
+    margin-right: 1rem;
+  }
+  
+  footer button {
+    background-color: #38b2ac;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s ease;
+  }
+  
+  footer button:hover {
+    background-color: #319795;
+  }
+  
+  footer .grid span:first-of-type {
+    margin-bottom: 1rem;
+  }
+  
+  footer .grid span:last-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer .grid img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  footer .grid a {
+    color: #cbd5e0;
+    transition: color 0.3s ease;
+  }
+  
+  footer .grid a:hover {
+    color: #fff;
+  }
+
